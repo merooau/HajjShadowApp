@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{AACAB6E9-3B13-4957-9429-EE1AA9CFE6CE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PilgrimageCommunication/Xamls/PilgrimsDashboard.xaml.cs">
+    <Files>
+      <File FileName="PilgrimageCommunication/Xamls/PilgrimsDashboard.xaml" Line="86" Column="1" />
+      <File FileName="PilgrimageCommunication/Resx/AppResources.resx" Line="57" Column="99" />
+      <File FileName="PilgrimageCommunication/Xamls/PilgrimsDashboard.xaml.cs" Line="115" Column="10" />
+      <File FileName="iOS/AppDelegate.cs" Line="4" Column="25" />
+      <File FileName="PilgrimageCommunication/Xamls/Registratoin.xaml.cs" Line="17" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="iOS/Info.plist" />
+      <File FileName="PilgrimageCommunication/Xamls/Verification.xaml.cs" Line="22" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.PilgrimageCommunication.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.64B96742-D133-4E55-9F0C-39691F3BA923" automaticSigning="False">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.PilgrimageCommunication.iOS>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.PilgrimageCommunication.Droid PreferredExecutionTarget="Android.AVD_for_Nexus_5_by_Google" />
+</Properties>
