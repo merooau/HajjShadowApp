@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+    <data name="RegistrationTitleTxt" xml:space="preserve">
+        <value>Registration</value>
+    </data>
+
+    <data name="WelcomeTxt" xml:space="preserve">
+        <value>Welcome To Pilgrim Shadow Mobile Application</value>
+    </data>
+
+    <data name="LanguageSelectText" xml:space="preserve">
+        <value>Please select your language</value>
+    </data>
+
+    <data name="CountryCodePickerText" xml:space="preserve">
+        <value>Please select your Country Code</value>
+    </data>
+
+    <data name="SendVerificationNumberBtnText" xml:space="preserve">
+        <value>Send Verification Code</value>
+    </data>
+
+    <data name="VerificationTitleTxt" xml:space="preserve">
+        <value>Verification</value>
+    </data>
+
+    <data name="EnterVerCodeTxt" xml:space="preserve">
+        <value>Enter Verification Code</value>
+    </data>
+
+    <data name="ConfirmVerificationNumberBtnText" xml:space="preserve">
+        <value>Confirm your Code</value>
+    </data>
+
+    <data name="DashboardTitleTxt" xml:space="preserve">
+        <value>Pilgrim Dashboard</value>
+    </data>
+
+    <data name="YourLocTxt" xml:space="preserve">
+        <value>Based in your location you are in:</value>
+    </data>
+
+    <data name="LimitationTxt" xml:space="preserve">
+        <value>Due some limitation in simulator we are assuming you are moving to AlJamarat bridge. after 10sec you will be connected to another live radio station based in your location</value>
+    </data>
+    
+</root>

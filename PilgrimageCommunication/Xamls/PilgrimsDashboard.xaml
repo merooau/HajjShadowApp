@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PilgrimageCommunication.Xamls.PilgrimsDashboard"
+    xmlns:i18n="clr-namespace:PilgrimageCommunication;assembly=PilgrimageCommunication"
+    xmlns:local="clr-namespace:PilgrimageCommunication"
+    Title="{i18n:Translate DashboardTitleTxt}"
+    xmlns:maps="clr-namespace:PilgrimageCommunication;assembly=PilgrimageCommunication"
+    >
+	<ContentPage.Content>
+
+        <Grid x:Name ="LayoutRoot" RowSpacing="0" ColumnSpacing="0">
+            <Grid.Padding>
+                <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0" Android="0,0,0,0" />
+            </Grid.Padding>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <StackLayout 
+                Orientation="Horizontal"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Grid.Row="0" Grid.Column="0">
+                
+                <Label Text="{i18n:Translate YourLocTxt}"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"/>
+
+             </StackLayout>
+
+            <StackLayout 
+                Orientation="Horizontal"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Grid.Row="1" Grid.Column="0">
+                
+                <Label x:Name="currentLocation"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"/>
+
+             </StackLayout>
+
+            <StackLayout x:Name="MapStackLayout"
+                Grid.Row="2" HeightRequest="300">
+            </StackLayout>
+
+            <StackLayout 
+                Orientation="Horizontal"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Grid.Row="3" Grid.Column="0" Padding="10">
+                
+                <Label Text="{i18n:Translate LimitationTxt}"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                VerticalOptions="Start"/>
+
+             </StackLayout>
+
+            <StackLayout 
+                Orientation="Horizontal"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Start"
+                Grid.Row="4" Grid.Column="0" Padding="10">
+                
+                <Button Text="Play live radio station!" BackgroundColor="Navy" HorizontalOptions="FillAndExpand" Clicked="OnPlayButtonClicked" />
+
+             </StackLayout>
+
+        </Grid>
+        
+	</ContentPage.Content>
+</ContentPage>

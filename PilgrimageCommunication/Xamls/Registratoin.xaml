@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PilgrimageCommunication.Xamls.Registratoin"
+    xmlns:i18n="clr-namespace:PilgrimageCommunication;assembly=PilgrimageCommunication"
+    xmlns:local="clr-namespace:PilgrimageCommunication"
+    Title="{i18n:Translate RegistrationTitleTxt}"
+    >
+	<ContentPage.Content>
+
+    <Grid x:Name ="LayoutRoot" RowSpacing="0" ColumnSpacing="0">
+            <Grid.Padding>
+                <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0" Android="0,0,0,0" />
+            </Grid.Padding>
+
+            <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+
+            <StackLayout 
+                Orientation="Horizontal"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Grid.Row="0" Grid.Column="0">
+                
+                <Label Text="{i18n:Translate WelcomeTxt}"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"/>
+
+             </StackLayout>
+
+            <StackLayout
+                HorizontalOptions="FillAndExpand"
+                Padding="15"
+                Grid.Row="1">
+
+                <Picker x:Name="LanguagePicker" Title="{i18n:Translate LanguageSelectText}">
+                  <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                      <x:String>العربية</x:String>
+                      <x:String>ِEnglish</x:String>
+                    </x:Array>
+                  </Picker.ItemsSource>
+                </Picker>
+                
+            </StackLayout>
+
+            <StackLayout Grid.Row="2"
+                HorizontalOptions="Start"
+                Padding="15,0">
+
+                <Grid ColumnSpacing="10">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Picker x:Name="countryCodePicker"
+                        Title="{i18n:Translate CountryCodePickerText}"
+                        WidthRequest="60" Grid.Row="0">
+
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                              <x:String>966 السع،دية</x:String>
+                              <x:String>ِ971 ازمارات العربية المتحدة</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Entry x:Name="MobileNoEntry" Grid.Row="0" Grid.Column="1"/>
+
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" Padding="15">
+
+                <Button Text="{i18n:Translate SendVerificationNumberBtnText}"
+                BackgroundColor="Navy"
+                Clicked="OnSendVerificationCodeButtonClicked"/>
+            </StackLayout>
+
+    </Grid>
+        
+        
+	</ContentPage.Content>
+</ContentPage>

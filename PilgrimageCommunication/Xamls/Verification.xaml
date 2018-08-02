@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PilgrimageCommunication.Xamls.Verification"
+    xmlns:i18n="clr-namespace:PilgrimageCommunication;assembly=PilgrimageCommunication"
+    xmlns:local="clr-namespace:PilgrimageCommunication"
+    Title="{i18n:Translate VerificationTitleTxt}"
+    >
+
+    <Grid x:Name ="LayoutRoot" RowSpacing="0" ColumnSpacing="0">
+        <Grid.Padding>
+            <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0" Android="0,0,0,0" />
+        </Grid.Padding>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackLayout 
+            Orientation="Horizontal"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Grid.Row="0" Grid.Column="0">
+            
+            <Label Text="{i18n:Translate EnterVerCodeTxt}"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Start"/>
+
+         </StackLayout>
+
+        <StackLayout 
+            Orientation="Horizontal"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="Fill"
+            Grid.Row="1" Grid.Column="0"
+            Padding="15">
+
+            <Entry HorizontalOptions="FillAndExpand" WidthRequest="200" />
+        </StackLayout>
+
+        <StackLayout Grid.Row="3" HorizontalOptions="Center">
+
+                <Button Text="{i18n:Translate ConfirmVerificationNumberBtnText}"
+                BackgroundColor="Navy" WidthRequest="200"
+                Clicked="OnConfirmCodeButtonClicked"/>
+        </StackLayout>
+
+        
+        
+
+    </Grid>
+
+    
+	<ContentPage.Content>
+	</ContentPage.Content>
+</ContentPage>
